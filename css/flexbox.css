@@ -1,0 +1,96 @@
+/* ===================
+   MAIN NAVIGATOR
+====================== */
+body{
+    display: flex;
+    flex-direction: column;
+}
+.navbar {
+    display: flex;
+    width: 90%;
+    height: auto;
+    justify-content: center;     
+}
+.logo {
+    flex-grow: 2;
+    order: -2;
+}
+.contact, .faq, .about{
+    order: -1;
+}
+/* ===================
+   BACKGROUND
+====================== */
+
+.background{
+    display: flex;
+    flex-flow: column;
+    flex-basis: 1;
+}
+.header{
+    width: 90%;
+    height: auto;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.app {
+    display: flex;
+    width: 90%;
+    align-content: center;
+    justify-content: center;
+}
+.google {
+    margin-right: 10px;
+}
+
+.google,
+.apple{
+    transition-duration: .5s;
+    cursor: pointer;
+}
+.google:hover,
+.apple:hover{
+    transform: scale(1.1);
+}
+#download {
+    align-self: auto;
+}
+/* ===================
+   WELCOME
+====================== */
+.welcome2{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 90px;
+}
+.item1{
+    justify-content: space-around;
+    margin-right: 20px;
+    border: solid 1px rgb(185, 183, 183);
+    border-radius: 9px 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* ===================
+        FOOTER
+====================== */
+footer{
+    display: flex;
+}
+
+.footer{
+    border-top: solid 2px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(81, 85, 52), transparent 90%),
+    linear-gradient(to top,#000,transparent),
+    #000 url("..//images/commut1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    width: 100%;
+    margin-top: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
